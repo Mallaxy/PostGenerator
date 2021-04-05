@@ -1,0 +1,36 @@
+.inputBlock {
+  width: 750px;
+  margin: 20px auto;
+  padding: 10px;
+  display: grid;
+  grid-template: "img title" 3em "img link" 3em "img text" 9em/2fr 5fr;
+  gap: 10px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+}
+.inputBlock .imgInput {
+  grid-area: img;
+}
+.inputBlock .titleInput {
+  grid-area: title;
+}
+.inputBlock .linkInput {
+  grid-area: link;
+}
+.inputBlock .textInput {
+  grid-area: text;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.inputBlock .textInput textarea {
+  background-color: dimgrey;
+  height: 100%;
+  width: 100%;
+  resize: none;
+}
+.inputBlock .error {
+  color: red;
+}
+
+/*# sourceMappingURL=InputBlock.module.css.map */

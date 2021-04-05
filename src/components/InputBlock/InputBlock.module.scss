@@ -1,0 +1,38 @@
+.inputBlock {
+  width: 750px;
+  margin: 20px auto;
+  padding: 10px;
+  display: grid;
+  grid-template:
+  'img title' 3em
+  'img link' 3em
+  'img text' 9em / 2fr 5fr;
+  gap: 10px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+  .imgInput {
+    grid-area: img;
+
+  }
+  .titleInput {
+    grid-area: title;
+  }
+  .linkInput {
+    grid-area: link;
+  }
+  .textInput {
+    grid-area: text;
+    border-radius: 5px;
+    overflow: hidden;
+    textarea {
+      background-color: dimgrey;
+      height: 100%;
+      width: 100%;
+      resize: none;
+    }
+  }
+  .error {
+    color: red;
+  }
+}

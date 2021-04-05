@@ -1,0 +1,11 @@
+.inputItem {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.inputItem * {
+  background-color: dimgrey;
+}
+
+/*# sourceMappingURL=InputItem.module.css.map */
